@@ -74,7 +74,7 @@ uint8_t type;
 char imei[16] = {0}; // MUST use a 16 character buffer for IMEI!
 
 void setup() {
-//  while (!Serial);                      Have commentt this out ob battery, because there won'tt be serial, un-comment for debugging
+  while (!Serial);                    //  Have comment this out on battery, because there won't be serial, un-comment for debugging
 
   pinMode(FONA_RST, OUTPUT);
   digitalWrite(FONA_RST, HIGH); // Default state
@@ -204,7 +204,7 @@ char callerIDbuffer[32];  //we'll store the SMS sender number in here
 
 int slot = 0;            //this will be the slot number of the SMS
 
-void loop() {
+void loop() {             //
 Text_Fnxn;
 }
 void Text_Fnxn (){  
